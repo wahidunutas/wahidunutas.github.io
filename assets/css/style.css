@@ -232,7 +232,7 @@ aside .download-cv a:hover {
 }
 
 .progress-circle.blue .progress-bar {
-    border-color: #fffb00
+    border-color: #383E56
 }
 
 .progress-circle.blue .progress-left .progress-bar {
@@ -317,12 +317,14 @@ aside .download-cv a:hover {
 
 .content .card-body-content {
     height: 566px;
-    overflow-x: hidden;
-    /* padding: 0; */
+    /* overflow-x: hidden; */
+    padding: 0;
+    margin: 0;
 }
 
 .content .navbar {
     background-color: #383E56;
+    /* background-color: #dee2e6; */
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
@@ -367,16 +369,15 @@ aside .download-cv a:hover {
 }
 
 
-.card-footer-content {
+.footer-content {
     text-align: center;
-    /* background-color: #383E56; */
     color: white;
     height: 43px;
     padding: 13px;
     font-family: 'Poppins', sans-serif;
 }
 
-.card-footer-content p {
+.footer-content p {
     font-size: 12px;
 }
 
@@ -685,19 +686,15 @@ aside .download-cv a:hover {
         background-color: white;
     }
 
-    aside .title {
-        top: 14%;
-        left: 30%;
-        text-align: center;
-    }
-
     aside h5 {
         font-size: 14px;
         line-height: 17px;
+        margin-left: 20px;
     }
 
     aside p {
         font-size: 12px;
+        margin-left: 20px;
     }
 
     aside .download-cv {
@@ -721,7 +718,7 @@ aside .download-cv a:hover {
         flex-wrap: wrap;
     }
 
-    .card-footer-content {
+    .footer-content {
         position: fixed;
         left: 0;
         bottom: 0;
