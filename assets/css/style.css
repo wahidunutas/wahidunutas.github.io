@@ -713,20 +713,21 @@ aside .download-cv a:hover {
         text-align: center;
     }
 
-    .someWork .container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     .footer-content {
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
+        margin: 0;
         background-color: #383E56;
         color: white;
         text-align: center;
+        z-index: 1;
     }
 
+
+    .offcanvas {
+        background-color: transparent;
+    }
 
 }
