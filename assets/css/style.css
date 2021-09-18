@@ -14,16 +14,6 @@ o {
 }
 
 
-#hiden {
-    display: none;
-    position: absolute;
-    top: 5%;
-    left: 19%;
-    font-size: 20px;
-    color: #F4F6FF;
-    z-index: 1;
-}
-
 aside {
     background: rgb(48, 48, 48);
     width: 293px;
@@ -107,6 +97,7 @@ aside p {
 aside .table {
     color: white;
     font-size: 13px;
+    background: none;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -115,7 +106,6 @@ aside .table {
 aside .download-cv a {
     color: #bdbdbd;
     text-decoration: none;
-    /* text-align: center; */
 }
 
 aside .download-cv a:hover {
@@ -317,7 +307,6 @@ aside .download-cv a:hover {
 
 .content .card-body-content {
     height: 566px;
-    /* overflow-x: hidden; */
     padding: 0;
     margin: 0;
 }
@@ -381,15 +370,17 @@ aside .download-cv a:hover {
     font-size: 12px;
 }
 
-
+.offcanvas {
+    background-color: transparent;
+    width: fit-content;
+}
 
 .progress-bar {
     background-color: #283C63;
 }
 
 .someWork {
-    margin-top: 1rem;
-    margin-bottom: 2.6em;
+    margin-top: 1.4rem;
 }
 
 .owl-dots {
@@ -447,22 +438,10 @@ aside .download-cv a:hover {
 }
 
 .someWork nav {
-    background-color: transparent;
     margin-bottom: 20px;
 }
 
-.someWork .nav-link {
-    color: #bdbdbd;
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.4s ease-in-out;
-}
 
-.someWork .nav-link:hover {
-    text-decoration: underline 3px white;
-    transform: translate(2%, 10%);
-    color: white;
-}
 
 .timeline {
     margin: 0 0 45px;
@@ -470,13 +449,6 @@ aside .download-cv a:hover {
     position: relative
 }
 
-/* .timeline small {
-    color: #8c8c8e;
-    font-size: 13px;
-    line-height: 22px;
-    font-weight: 400;
-    padding: 10px;
-} */
 
 .timeline::before {
     border-radius: .25rem;
@@ -638,13 +610,11 @@ aside .download-cv a:hover {
 /* mobile */
 @media screen and (min-width:320px) and (max-width:768px) {
     .content {
-        background: rgb(48, 48, 48);
+        /* background: rgb(48, 48, 48); */
         width: 100%;
-        height: auto;
         position: fixed;
         top: 0;
         left: 21px;
-        right: auto;
         z-index: 1;
     }
 
@@ -699,14 +669,14 @@ aside .download-cv a:hover {
 
     aside .download-cv {
         margin-top: -10px;
-        margin-bottom: 90px;
+        margin-bottom: 40px;
     }
 
     aside .footer-kiri {
         /* margin: 10px; */
         background-color: #383E56;
         position: fixed;
-        /* left: 0; */
+        left: 0;
         bottom: 0;
         width: 100%;
         color: white;
@@ -718,7 +688,6 @@ aside .download-cv a:hover {
         left: 0;
         bottom: 0;
         width: 100%;
-        margin: 0;
         background-color: #383E56;
         color: white;
         text-align: center;
@@ -727,6 +696,10 @@ aside .download-cv a:hover {
 
 
     .offcanvas {
+        background-color: transparent;
+    }
+
+    #body-canvas {
         background-color: transparent;
     }
 
